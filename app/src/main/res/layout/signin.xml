@@ -50,6 +50,7 @@
         android:drawableLeft="@drawable/vector_pass"
         android:drawablePadding="10dp"
         android:hint="Password"
+        android:inputType="textPassword"
         android:padding="15dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -64,24 +65,59 @@
         android:layout_below="@+id/password"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="@color/light_blue"
         android:text="Login"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        tools:layout_editor_absoluteX="161dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/forget_pass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="111dp"
+        android:layout_height="24dp"
         android:layout_below="@id/loginBtn"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
         android:text="Forgot Password"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginBtn"
-        tools:layout_editor_absoluteX="152dp"
         tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/forget_pass"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/regitered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Not registered yet? click"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/registerHereBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/light_blue"
+            android:text="Here"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/other_signin"
@@ -89,12 +125,15 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/social_apps"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="28dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="44dp"
         android:text="Sign In With"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/social_apps"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
