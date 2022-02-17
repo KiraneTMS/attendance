@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="id_activityScreenTitles">
+
+        <item></item>
+        <item>Dashboard</item>
+        <item>About Us</item>
+        <item/>
+        <item>Logout</item>
+    </string-array>
+
+    <string-array name="id_activityScreenIcons">
+        <item>@drawable/close_icon</item>
+        <item>@drawable/home_icon</item>
+        <item>@drawable/about_us_icon</item>
+        <item></item>
+        <item>@drawable/logout_icon</item>
+    </string-array>
+</resources>
