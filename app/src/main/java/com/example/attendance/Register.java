@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.nio.charset.Charset;
 import java.util.Random;
@@ -43,6 +44,10 @@ public class Register extends AppCompatActivity {
         b_signin = findViewById(R.id.loginBtn);
 
         fAuth = FirebaseAuth.getInstance();
+
+        FirebaseUser fUser = fAuth.getCurrentUser();
+        if(fUser != null && !fUser.isEmailVerified()) { }
+
 
         b_register.setOnClickListener(view -> createUser());
         b_signin.setOnClickListener(view -> startActivity(new Intent(Register.this, SignIn.class)));

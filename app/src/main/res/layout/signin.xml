@@ -23,7 +23,7 @@
         tools:layout_editor_absoluteY="40dp" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/signin_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/signin"
@@ -41,10 +41,10 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/signin_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/username"
+        android:layout_below="@+id/signin_email"
         android:layout_marginTop="32dp"
         android:background="#30ffffff"
         android:drawableLeft="@drawable/vector_pass"
@@ -54,7 +54,7 @@
         android:padding="15dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/signin_email"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -62,7 +62,7 @@
         android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/signin_password"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:layout_marginTop="32dp"
@@ -71,7 +71,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/signin_password"
         tools:ignore="MissingConstraints" />
 
     <TextView

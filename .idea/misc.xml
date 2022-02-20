@@ -5,14 +5,19 @@
       <map>
         <entry key="..\:/Arsya_no_Shigoto/myProject/Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1035" />
         <entry key="..\:/Arsya_no_Shigoto/myProject/Android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1035" />
-        <entry key="..\:/Arsya_no_Shigoto/myProject/Android/app/src/main/res/layout/about_us_fragment.xml" value="0.19953703703703704" />
         <entry key="..\:/Arsya_no_Shigoto/myProject/Android/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Arsya_no_Shigoto/myProject/Android/app/src/main/res/layout/dashboard.xml" value="0.1" />
-        <entry key="..\:/Arsya_no_Shigoto/myProject/Android/app/src/main/res/layout/dashboard_fragment.xml" value="0.19953703703703704" />
         <entry key="..\:/Arsya_no_Shigoto/myProject/Android/app/src/main/res/layout/drawer_menu.xml" value="0.1" />
         <entry key="..\:/Arsya_no_Shigoto/myProject/Android/app/src/main/res/layout/item_option_list.xml" value="0.1" />
         <entry key="..\:/Arsya_no_Shigoto/myProject/Android/app/src/main/res/layout/register.xml" value="0.25" />
         <entry key="..\:/Arsya_no_Shigoto/myProject/Android/app/src/main/res/layout/signin.xml" value="0.25" />
+        <entry key="..\:/Project/Android/arsya/attendance/app/src/main/res/drawable/rounded_bg.xml" value="0.2355" />
+        <entry key="..\:/Project/Android/arsya/attendance/app/src/main/res/layout/about_us_fragment.xml" value="0.36615384615384616" />
+        <entry key="..\:/Project/Android/arsya/attendance/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Project/Android/arsya/attendance/app/src/main/res/layout/dashboard_fragment.xml" value="0.36615384615384616" />
+        <entry key="..\:/Project/Android/arsya/attendance/app/src/main/res/layout/drawer_menu.xml" value="0.36615384615384616" />
+        <entry key="..\:/Project/Android/arsya/attendance/app/src/main/res/layout/item_option_list.xml" value="0.36615384615384616" />
+        <entry key="..\:/Project/Android/arsya/attendance/app/src/main/res/layout/register.xml" value="0.12447916666666667" />
+        <entry key="..\:/Project/Android/arsya/attendance/app/src/main/res/layout/signin.xml" value="0.22" />
       </map>
     </option>
   </component>
@@ -21,5 +26,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>
