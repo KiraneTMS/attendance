@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 
 import java.nio.charset.Charset;
 import java.util.Random;
@@ -28,10 +29,14 @@ public class Register extends AppCompatActivity {
     TextView t_user;
     TextView t_email;
     TextView t_pass;
+    TextView t_phone;
     Button b_register;
     Button b_signin;
 
     FirebaseAuth fAuth;
+    DatabaseReference reff;
+
+    Users users;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +44,7 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.register);
         t_user = findViewById(R.id.username);
         t_email = findViewById(R.id.email);
+        t_pass = findViewById(R.id.phone);
         t_pass = findViewById(R.id.password);
         b_register = findViewById(R.id.registerBtn);
         b_signin = findViewById(R.id.loginBtn);
@@ -67,6 +73,7 @@ public class Register extends AppCompatActivity {
     private void createUser(){
         String user = t_user.getText().toString();
         String email = t_email.getText().toString();
+        String phone = t_phone.getText().toString();
         String pass = t_pass.getText().toString();
 
         if (TextUtils.isEmpty(user)){
@@ -81,7 +88,21 @@ public class Register extends AppCompatActivity {
             t_pass.setError("password cant be empty");
             t_pass.requestFocus();
         }
+        else if (TextUtils.isEmpty(phone)){
+            t_pass.setError("password cant be empty");
+            t_pass.requestFocus();
+        }
         else{
+
+            users = new Users();
+
+
+            users.setUsername(user);
+            users.setEmail(email);
+            users.setPhone(phone);
+
+            reff.push().setValue(users);
+
             fAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {

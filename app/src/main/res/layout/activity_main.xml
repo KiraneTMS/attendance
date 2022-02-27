@@ -16,14 +16,13 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#fff"
-                app:title="Hello World"
-                app:titleTextColor="@color/purple_200" />
+                app:title="Attendance"
+                app:titleTextColor="@color/light_blue" />
 
             <FrameLayout
                 android:id="@+id/container"
@@ -31,6 +30,24 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450dp"
+                android:layout_marginBottom="300dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="110dp"
+                android:text="Scan"
+                android:textSize="60dp"
+                android:backgroundTint="@color/light_blue"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -50,7 +67,7 @@
                 android:textAlignment="center"
                 android:textSize="25sp"
                 android:textColor="@color/white"
-                android:text="FUCK YOU"/>
+                android:text="Menu"/>
         </LinearLayout>
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
